@@ -7,7 +7,7 @@ import streamlit as st
 #API Key connection 
 
 def Api_connect():
-    Api_Id="AIzaSyBaJnw7bc9ZXXl-kvm-P-sPceY6om7Ut-g"
+    Api_Id="YOUR_API_KEY"
 
     api_service_name="youtube"
     api_version="v3"
@@ -148,7 +148,7 @@ def get_playlist_details(channel_id):
     return All_data
 
 
-client=pymongo.MongoClient("mongodb+srv://saravanan:saro@majority.ftrfm.mongodb.net/?retryWrites=true&w=majority&appName=majority")
+client=pymongo.MongoClient("YOUR_MONGODB_CONNECTION")
 db=client["Youtube_data"]
 
 
@@ -175,8 +175,8 @@ def channel_details(channel_id):
 def channel_table():
 
         mydb=psycopg2.connect(host="localhost",
-                            user="postgres",
-                            password="Iamsaro@.1234#",
+                            user="YOUR_USERS",
+                            password="YOUR_PASSWORD",
                             database="youtube_data",
                             port="5432")
         cursor=mydb.cursor()
@@ -248,8 +248,8 @@ def channel_table():
 def playlist_table():
 
     mydb=psycopg2.connect(host="localhost",
-                            user="postgres",
-                            password="Iamsaro@.1234#",
+                            user="YOUR_USERS",
+                            password="YOUR_PASSWORD",
                             database="youtube_data",
                         port="5432")
     cursor=mydb.cursor()
@@ -309,8 +309,8 @@ def playlist_table():
 def videos_table():
 
     mydb=psycopg2.connect(host="localhost",
-                            user="postgres",
-                            password="Iamsaro@.1234#",
+                            user="YOUR_USERS",
+                            password="YOUR_PASSWORD",
                             database="youtube_data",
                         port="5432")
     cursor=mydb.cursor()
@@ -401,8 +401,8 @@ def comments_table():
 
 
     mydb=psycopg2.connect(host="localhost",
-                            user="postgres",
-                            password="Iamsaro@.1234#",
+                            user="YOUR_USERS",
+                            password="YOUR_PASSWORD",
                             database="youtube_data",
                         port="5432")
     cursor=mydb.cursor()
